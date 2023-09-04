@@ -9,7 +9,13 @@ function FramerPage() {
 
   return (
     <div id="demo">
-      <motion.div id="box" animate={{ x: x }} transition={{ duration: 3}}/>
+      <motion.div id="box" animate={{ x: x, y: y, rotate: rotate }} 
+      transition={{ 
+        duration: 0.3,
+        type: 'tween',
+        bounce: 1,
+        
+      }}/>
 
       <div id="inputs">
         <p>
